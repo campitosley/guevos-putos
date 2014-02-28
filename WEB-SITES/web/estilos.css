@@ -193,3 +193,45 @@ body {
     margin:0 auto;
     margin-top:-300px;
 }
+.publicidad{
+    width:600px;
+    height:500px;
+    margin:0 auto;
+
+}
+#inicio{
+    margin-bottom:20px;
+}
+.publicidad-encabezado{
+    width:580px;
+    height:120px;
+        color: #080808;
+      -ms-background:white;
+       background-image: -webkit-gradient(
+  linear, left top, right bottom, from(rgba(255,255,255,1.0)),
+  to(rgba(255,255,255,0.5)), color-stop(.5,#FFFFFF)
+);
+/* mozilla example - FF3.6+ */
+        background-image: -moz-linear-gradient(
+          left center,
+      rgba(255, 255, 255, 1.0) 20%,   rgba(255, 255, 255, 0) 95% 
+        );
+
+
+border-color: #c0c0c0;
+border-style: solid;
+border-width: thin;
+
+}
+#esquina{
+    margin-top:0;
+    float:left;
+}
+.imagenes-publicidad{
+float:left; 
+width:572px;
+position: relative;
+margin-top:-120px;
+z-index: -99;
+
+}
