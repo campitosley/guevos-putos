@@ -26,6 +26,34 @@ and open the template in the editor.
         <img class="imagenes-publicidad" src="http://campitos.cfapps.io/servicio-imagenes/leer-imagen-monguito/promo1"/>
         <img id="esquina-derecha"  src="esquina-inferior-derecha.png">
         </div>
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/docs.min.js"></script>
+    <script src="js/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#hoteles").click(function(){
+        $.scrollTo($("#informacion-hoteles"),800);
+        });
         
+        $.ajax({
+            type:'get',
+            dataType:'jsonp',
+            contentType:'application/jsonp',
+            url: "http://campitos.cfapps.io/servicio-imagenes/jsonp?callback=?",
+            data:{
+                
+            },
+            success:function(response){
+                alert(response[0].mensaje);
+            },
+            error:function(){
+                alert("POST fallo");
+            }
+             
+        });
+     
+    });
+    </script>
         </body>
 </html>
