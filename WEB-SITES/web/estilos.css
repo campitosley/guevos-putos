@@ -203,21 +203,23 @@ body {
     margin-bottom:20px;
 }
 .publicidad-encabezado{
-    width:580px;
+    width:589px;
     height:120px;
         color: #080808;
+        background: rgba(255,255,255,0.8);
+        /*
       -ms-background:white;
        background-image: -webkit-gradient(
   linear, left top, right bottom, from(rgba(255,255,255,1.0)),
   to(rgba(255,255,255,0.5)), color-stop(.5,#FFFFFF)
 );
-/* mozilla example - FF3.6+ */
+/* mozilla example - FF3.6+ 
         background-image: -moz-linear-gradient(
           left center,
       rgba(255, 255, 255, 1.0) 20%,   rgba(255, 255, 255, 0) 95% 
         );
 
-
+*/
 border-color: #c0c0c0;
 border-style: solid;
 border-width: thin;
@@ -227,6 +229,11 @@ border-width: thin;
     margin-top:0;
     float:left;
 }
+#esquina-derecha{
+    margin-top:0;
+    margin-right: 9px;
+    float:right;
+}
 .imagenes-publicidad{
 float:left; 
 width:572px;
@@ -234,4 +241,16 @@ position: relative;
 margin-top:-120px;
 z-index: -99;
 
+}
+.numero-uno{
+    float:left;
+    width:60px;
+    height:60px;
+    margin: 15px;
+    background: #38843a;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 15px;
 }
