@@ -1,6 +1,14 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
+@font-face{
+    font-family: yo1;
+    src:url(font/Amatic-Bold.ttf);
+}
+@font-face{
+    font-family:yo2;
+    src:url(font/CaviarDreams.ttf);
+}
 
 body {
   padding-bottom: 40px;
@@ -12,6 +20,87 @@ body {
     height:700px;
 }
 
+
+.publicidad-encabezado{
+    width:589px;
+    height:120px;
+        color: #080808;
+        background: rgba(255,255,255,0.7);
+        /*
+      -ms-background:white;
+       background-image: -webkit-gradient(
+  linear, left top, right bottom, from(rgba(255,255,255,1.0)),
+  to(rgba(255,255,255,0.5)), color-stop(.5,#FFFFFF)
+);
+/* mozilla example - FF3.6+ 
+        background-image: -moz-linear-gradient(
+          left center,
+      rgba(255, 255, 255, 1.0) 20%,   rgba(255, 255, 255, 0) 95% 
+        );
+
+*/
+border-color: #c0c0c0;
+border-style: solid;
+border-width: thin;
+
+}
+#esquina{
+    margin-top:0;
+    float:left;
+}
+#esquina-derecha{
+    margin-top:0;
+    margin-right: 9px;
+    float:right;
+}
+.imagenes-publicidad{
+float:left; 
+width:572px;
+position: relative;
+margin-top:-120px;
+z-index: -99;
+
+}
+.numero-uno{
+    float:left;
+    width:60px;
+    height:60px;
+    margin: 15px;
+    background: #38843a;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 15px;
+}
+.publicidad{
+    width:600px;
+    height:500px;
+    margin:0 auto;
+
+}
+
+.publicidad-encabezado h2{
+    float:left;
+    color: #080808;
+    font-family: yo2;
+    font-size: 18px;
+    font-weight: 900;
+}
+.publicidad-encabezado p{
+    font-family: yo2;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#inferior{
+    width:400px;
+    position: relative;
+    height:100px;
+  //  background: #3c763d;
+    margin:0 auto;
+    margin-top:-300px;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -177,7 +266,32 @@ body {
   height: 300px;
 }
 
+#esquina{
+    display: none;
 }
+.publicidad{
+    width:320px;
+    margin: 0 auto;
+}
+
+.publicidad-encabezado{
+  display:none;
+
+}
+.imagenes-publicidad{
+    margin-top: 120px;
+    width:320px;
+     margin: 0 auto;
+
+
+}
+#esquina-derecha{
+    display: none;
+}
+}
+
+
+
 
 .hola{
     width:100%;
@@ -185,72 +299,8 @@ body {
     background: red;
     margin-top: -90px;
 }
-#inferior{
-    width:400px;
-    position: relative;
-    height:100px;
-  //  background: #3c763d;
-    margin:0 auto;
-    margin-top:-300px;
-}
-.publicidad{
-    width:600px;
-    height:500px;
-    margin:0 auto;
 
-}
+
 #inicio{
     margin-bottom:20px;
-}
-.publicidad-encabezado{
-    width:589px;
-    height:120px;
-        color: #080808;
-        background: rgba(255,255,255,0.8);
-        /*
-      -ms-background:white;
-       background-image: -webkit-gradient(
-  linear, left top, right bottom, from(rgba(255,255,255,1.0)),
-  to(rgba(255,255,255,0.5)), color-stop(.5,#FFFFFF)
-);
-/* mozilla example - FF3.6+ 
-        background-image: -moz-linear-gradient(
-          left center,
-      rgba(255, 255, 255, 1.0) 20%,   rgba(255, 255, 255, 0) 95% 
-        );
-
-*/
-border-color: #c0c0c0;
-border-style: solid;
-border-width: thin;
-
-}
-#esquina{
-    margin-top:0;
-    float:left;
-}
-#esquina-derecha{
-    margin-top:0;
-    margin-right: 9px;
-    float:right;
-}
-.imagenes-publicidad{
-float:left; 
-width:572px;
-position: relative;
-margin-top:-120px;
-z-index: -99;
-
-}
-.numero-uno{
-    float:left;
-    width:60px;
-    height:60px;
-    margin: 15px;
-    background: #38843a;
-    color: white;
-    font-size: 20px;
-    font-weight: 900;
-    text-align: center;
-    padding-top: 15px;
 }
