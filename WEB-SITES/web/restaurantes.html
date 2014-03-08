@@ -25,10 +25,10 @@ and open the template in the editor.
 }(document, 'script', 'facebook-jssdk'));</script>
 <div class="container">
     
-    <center> <div class="fb-like" data-href="http://kuicho.com/promociones.html" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" style="margin:0 auto;margin-top:5px;text-align:center;"></div></center>
+    <center> <div class="fb-like" data-href="http://kuicho.com/restaurantes.html" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" style="margin:0 auto;margin-top:5px;text-align:center;"></div></center>
 
 </div>      
-        <h1> Promoción de la semana</h1>
+        <h1> Kuicho Restaurantes</h1>
        <!-- Compatir facdbook -->
 
 <!-- Navegacion-->
@@ -86,11 +86,11 @@ and open the template in the editor.
             <div class="numero-uno">
                 1
             </div>
-            <div id="mi-promo1-mensaje"></div>
+            <h2 id="mi-promo1-mensaje"></h2>
         </div>
          
         <img id="esquina" src="esquina-inferior.png">
-        <img class="imagenes-publicidad" src="http://campitos.cfapps.io/servicio-imagenes/leer-imagen-monguito/promo1"/>
+        <img class="imagenes-publicidad" src="http://campitos.cfapps.io/servicio-imagenes/leer-imagen-monguito/promo2"/>
         <img id="esquina-derecha"  src="esquina-inferior-derecha.png">
           
         </div>
@@ -123,9 +123,9 @@ and open the template in the editor.
             success:function(response){
                // alert(response[1].mensaje);
                /* Aqui iran todos los valores para cada promo*/
-               $("#mi-promo1-mensaje").html("<center><h2>"+response[0].mensaje+"</h2></center><center><br><br><br> <p>Nos encontramos en "+response[0].direccion+"</p></center>");
-               
-    },
+               $("#mi-promo1-mensaje").html("<h2>"+response[2].mensaje+"</h2>\n\
+                <p>Nos encontramos en "+response[2].direccion+"</p>");
+            },
             error:function(){
                 alert("POST fallo");
             }
