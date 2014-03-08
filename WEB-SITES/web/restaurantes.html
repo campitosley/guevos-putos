@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Kuicho Promociones</title>
+        <title>Coe nuestra recomendacion para el dia de hoy!!!</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -123,7 +123,7 @@ and open the template in the editor.
             success:function(response){
                // alert(response[1].mensaje);
                /* Aqui iran todos los valores para cada promo*/
-               $("#mi-promo1-mensaje").html("<center><h2>"+response[1].mensaje+"</h2></center><center><br><br><br> <p>Nos encontramos en "+response[1].direccion+"</p></center>");
+               $("#mi-promo1-mensaje").html("<center><h2>"+response[1].mensaje+"</h2></center><center><br><br><br> <p>"+response[1].direccion+"</p></center>");
             },
             error:function(){
                 alert("POST fallo");
