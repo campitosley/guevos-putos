@@ -86,7 +86,7 @@ and open the template in the editor.
             <div class="numero-uno">
                 1
             </div>
-            <h2 id="mi-promo1-mensaje"></h2>
+           <div id="mi-promo1-mensaje"></div>
         </div>
          
         <img id="esquina" src="esquina-inferior.png">
@@ -123,8 +123,7 @@ and open the template in the editor.
             success:function(response){
                // alert(response[1].mensaje);
                /* Aqui iran todos los valores para cada promo*/
-               $("#mi-promo1-mensaje").html("<h2>"+response[2].mensaje+"</h2>\n\
-                <p>Nos encontramos en "+response[2].direccion+"</p>");
+               $("#mi-promo1-mensaje").html("<center><h2>"+response[1].mensaje+"</h2></center><center><br><br><br> <p>Nos encontramos en "+response[1].direccion+"</p></center>");
             },
             error:function(){
                 alert("POST fallo");

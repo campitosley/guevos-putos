@@ -15,10 +15,15 @@ and open the template in the editor.
         <div class="container">
         <div class="col-md-4">
             <div class="row">
-                <H2>Titulo</H2>
+                <H2>Promocion</H2>
             </div>
             <div class="row">
-                <input id="titulo" type="text" value="promo1" >
+                <select id="titulo" class="btn btn-success">
+                    <option value="promo1">Promocion</option>
+                    <option value="promo2">Restaurantes</option>
+                    <option value="promo3">Hoteles</option>
+                    <option value="promo4">Paquetes</option>
+                </select>
             </div>
         </div>
         <div class="col-md-4">
@@ -73,7 +78,8 @@ and open the template in the editor.
                        
           //primera promocion    
           $("#boton-promocion1").click(function(){
-             //alert("funciona");
+             //alert($("#titulo").val());
+             
              $.ajax({
                  url:"http://campitos.cfapps.io/servicio-imagenes/promo1?titulo="+$("#titulo").val()+"&mensaje="+$("#mensaje").val()+"&direccion="+$("#direccion").val()+"&callback=?",
                  type:'get',
@@ -81,9 +87,9 @@ and open the template in the editor.
                  contentType:"application/json",
                  
                  success:function(response){
-                     alert("enviado con exito");
+                     alert("Promocion actualizada con exito");
                  }
-             });
+             });  
           });
                        
         });
